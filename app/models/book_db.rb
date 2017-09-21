@@ -1,0 +1,2 @@
+class BookDb < ApplicationRecord
+end
