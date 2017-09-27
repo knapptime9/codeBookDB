@@ -1,17 +1,21 @@
-<h1> views/books/index.html.erb</h1>
+<!-- template created after running rails generate controller books.  contains code that will render to localhost/books/index -->
+
+<!-- IMPORTANT:
+  ERB syntax(data passed between controller,etc displayed enclosed by):
+    <%= ... %>  code will output and display on page
+    <% ... %>   silently run in bacground, does not display -->
+
+
+
+<h1> books/index.html.erb</h1>
 <br>
 <br>
 <br>
 
 
-<%= @currentTime %>
+<%= @currentTime %>    <!--inst var created in books controller-->
 <br>
 <br>
 <br>
-<%= @bookControllerTestVar %>
+<%= @book %>
 <br>
-<br>
-<br>
-
-
-<%= "views/books/index.html.erb....I'm an erb test of passing string directly to a page" %>
