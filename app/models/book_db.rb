@@ -1,2 +1,0 @@
-class BookDb < ApplicationRecord
-end
