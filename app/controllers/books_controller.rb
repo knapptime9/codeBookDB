@@ -1,4 +1,6 @@
 class BooksController < ApplicationController
+  before_action :require_login, only: %i[new edit create update destroy]
+   before_action :is_owner, only: %i[edit update destroy]
 
   def index
     @books = Book.all

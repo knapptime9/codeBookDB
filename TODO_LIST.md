@@ -1,4 +1,4 @@
-*************Completed***********
+t *************Completed***********
 -generated models "bookDB" and "users" using rails generate to create necessary models
 
  -database schema migrated for "booksDB" table and "users".  tables generated and ready to accept data;
