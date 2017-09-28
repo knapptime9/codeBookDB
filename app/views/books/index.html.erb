@@ -6,7 +6,7 @@
     <% ... %>   silently run in bacground, does not display -->
     <h1>All books:</h1>
 
-    <%= link_to "Add a book", new_book_path %>
+    <%= link_to "Add a New Code Book", new_book_path %>
 
     <table>
      <tr>
@@ -26,7 +26,7 @@
       <td><%= link_to 'Edit', edit_book_path(book) %></td>
       <td><%= link_to 'Destroy', book_path(book),
               method: :delete,
-              data: { confirm: "Are you sure?" }%></td>
+              data: { confirm: "Confirm Delete [y/n]?" }%></td>
      </tr>
      <%end%>
     </table>

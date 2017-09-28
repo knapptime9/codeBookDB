@@ -1,7 +1,13 @@
-<h1>Welcome to FreeShelf!</h1>
+<h1>Welcome to the Iron Library!</h1>
+<h2> Browse the Collection or Create your own Personal Code Book</h2>
 
-<%= link_to "Log in to FreeShelf", new_session_path %><br />
+<p>
+  Please Sign In or Register New Account to Create Your New Book
+</p>
+
+
+<%= link_to "Login ", new_session_path %><br />
 <br />
-<%= link_to "Register an account with FreeShelf", new_user_path %><br />
+<%= link_to "Register an Account; Forge Your New Book",new_user_path %><br />
 <br />
-<%= link_to "View Book Collection", controller: "books" %>
+<%= link_to "Browse the Iron Library", controller: "books" %>
