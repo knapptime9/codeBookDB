@@ -20,13 +20,13 @@ class BooksController < ApplicationController
 
 
    def create
-     @book = Book.new(book_params)
-     @book.user_id = current_user.id if current_user
-     if @book.save
-       redirect_to @book
-     else
-       render 'new'
-     end
+    @book = Book.new(book_params)
+    @book.user_id = current_user.id if current_user
+    if @book.save
+     redirect_to @book
+    else
+     render 'new'
+    end
    end
 
 def update
