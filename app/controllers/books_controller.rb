@@ -46,8 +46,16 @@ end
 
   private
 
-   def book_params
+  def book_params
     params.require(:book).permit(:title, :author, :description, :link)
-   end
+  end
 
+  def require_login
+    redirect_to new_session_path unless logged_in?
+  end
+
+  def is_owner
+    @book = Book.find(params[:id])
+    redirect_to books_path unless @book.user_id == current_user.id
+  end
 end
