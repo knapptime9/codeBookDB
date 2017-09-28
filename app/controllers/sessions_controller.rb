@@ -8,13 +8,13 @@ class SessionsController < ApplicationController
       log_in user
       redirect_to books_path
     else
-      render 'error'
+      render 'new_error'
     end
   end
 
   def destroy
     session[:user_id] = nil
-    redirect_to '/home/index'
+    redirect_to '/'
     reset_session
   end
 
